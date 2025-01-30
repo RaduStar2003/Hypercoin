@@ -16,7 +16,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#features">Features</a></li>
                     <li><a href="#roadmap">Roadmap</a></li>
-                    <li><a href="#community">Community</a></li>
+                    <li><a href="#poll">Community Poll</a></li>
                 </ul>
             </nav>
         </div>
@@ -54,11 +54,23 @@
         </div>
     </section>
 
-    <section id="community" class="section">
+    <section id="poll" class="section">
         <div class="container">
-            <h2>Join the Community</h2>
-            <p>Be part of the Hypercoin revolution. Join our community and help shape the future of decentralized finance.</p>
-            <a href="https://www.hypercoinx.com" class="cta-button">Visit Hypercoin</a>
+            <h2>Community Poll</h2>
+            <p>Help us decide the next feature for Hypercoin!</p>
+            <form id="poll-form">
+                <label>
+                    <input type="radio" name="feature" value="staking"> Staking Rewards
+                </label>
+                <label>
+                    <input type="radio" name="feature" value="nft"> NFT Integration
+                </label>
+                <label>
+                    <input type="radio" name="feature" value="dao"> DAO Governance
+                </label>
+                <button type="submit">Vote</button>
+            </form>
+            <p id="poll-result"></p>
         </div>
     </section>
 
