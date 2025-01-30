@@ -1,31 +1,38 @@
-// Poll functionality
-document.getElementById('poll-form').addEventListener('submit', function (e) {
-    e.preventDefault();
-    const selectedFeature = document.querySelector('input[name="feature"]:checked');
-    if (selectedFeature) {
-        document.getElementById('poll-result').textContent = `Thank you for voting for ${selectedFeature.value}!`;
-    } else {
-        document.getElementById('poll-result').textContent = 'Please select an option to vote.';
+// Smooth Scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Poll System
+class CommunityPoll {
+    constructor() {
+        this.options = [];
+        this.loadPoll();
     }
-});
 
-// Add animations
-const sections = document.querySelectorAll('.section');
-sections.forEach(section => {
-    section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-});
+    vote(optionId) {
+        // Add voting logic
+    }
 
+    updateResults() {
+        // Update progress bars
+    }
+}
+
+// Intersection Observer for animations
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.classList.add('visible');
         }
     });
 });
 
-sections.forEach(section => {
-    observer.observe(section);
+document.querySelectorAll('.feature-card, .timeline-item').forEach(el => {
+    observer.observe(el);
 });
