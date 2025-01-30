@@ -4,8 +4,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #0a0a0a; /* Darker background */
-    color: #ffffff; /* White text */
+    background-color: #000000; /* Darker background */
+    color: #83c99f; /* White text */
 }
 
 .container {
@@ -16,17 +16,17 @@ body {
 
 /* Header */
 header {
-    background: #0a0a0a; /* Dark background */
+    background: #000000; /* Dark background */
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    border-bottom: 2px solid #00ff88; /* Hypercoin green */
+    border-bottom: 2px solid #83c99f; /* Hypercoin green */
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    color: #00ff88; /* Hypercoin green */
+    color: #83c99f; /* Hypercoin green */
 }
 
 header p {
@@ -53,7 +53,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #00ff88; /* Hypercoin green */
+    color: #83c99f; /* Hypercoin green */
 }
 
 /* Sections */
@@ -65,7 +65,7 @@ header nav ul li a:hover {
 .section h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #00ff88; /* Hypercoin green */
+    color: #83c99f; /* Hypercoin green */
 }
 
 .section p, .section ul {
@@ -104,8 +104,8 @@ header nav ul li a:hover {
 }
 
 #poll-form button {
-    background: #00ff88; /* Hypercoin green */
-    color: #0a0a0a; /* Dark background */
+    background: #83c99f; /* Hypercoin green */
+    color: #000000; /* Dark background */
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -115,22 +115,22 @@ header nav ul li a:hover {
 }
 
 #poll-form button:hover {
-    background: #00cc66; /* Darker green */
+    background: #83c99f; /* Darker green */
 }
 
 #poll-result {
     margin-top: 20px;
     font-size: 1.2rem;
-    color: #00ff88; /* Hypercoin green */
+    color: #83c99f; /* Hypercoin green */
 }
 
 /* Footer */
 footer {
-    background: #0a0a0a; /* Dark background */
+    background: #000000; /* Dark background */
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    border-top: 2px solid #00ff88; /* Hypercoin green */
+    border-top: 2px solid #83c99f; /* Hypercoin green */
 }
 
 footer p {
@@ -138,11 +138,11 @@ footer p {
 }
 
 footer a {
-    color: #00ff88; /* Hypercoin green */
+    color: #83c99f; /* Hypercoin green */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #00cc66; /* Darker green */
+    color: #83c99f; /* Darker green */
 }
