@@ -1,38 +1,90 @@
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hypercoin (HYC) - A Community-Driven Crypto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Hypercoin (HYC)</h1>
+            <p>A Community-Driven Journey of Evolution</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#poll">Community Poll</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-// Poll System
-class CommunityPoll {
-    constructor() {
-        this.options = [];
-        this.loadPoll();
-    }
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Hypercoin</h2>
+            <p>Hypercoin (HYC) is a community-driven cryptocurrency designed to evolve with the needs of its users. Our mission is to create a decentralized financial ecosystem that empowers individuals and fosters innovation.</p>
+            <p>Learn more about our journey and vision on <a href="https://medium.com/@hypercoin2000/introducing-hypercoin-hyc-a-community-driven-journey-of-evolution-a8b9b6ee2dca" target="_blank">Medium</a>.</p>
+        </div>
+    </section>
 
-    vote(optionId) {
-        // Add voting logic
-    }
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+                <li>Decentralized and community-driven</li>
+                <li>Secure and transparent blockchain technology</li>
+                <li>Scalable and efficient transaction processing</li>
+                <li>Continuous evolution through community feedback</li>
+            </ul>
+        </div>
+    </section>
 
-    updateResults() {
-        // Update progress bars
-    }
-}
+    <section id="roadmap" class="section">
+        <div class="container">
+            <h2>Roadmap</h2>
+            <ul>
+                <li><strong>Q1 2025:</strong> Launch of Hypercoin Mainnet</li>
+                <li><strong>Q2 2025:</strong> Community Governance Platform Release</li>
+                <li><strong>Q3 2025:</strong> Integration with Major Exchanges</li>
+                <li><strong>Q4 2025:</strong> Hypercoin Ecosystem Expansion</li>
+            </ul>
+        </div>
+    </section>
 
-// Intersection Observer for animations
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-        }
-    });
-});
+    <section id="poll" class="section">
+        <div class="container">
+            <h2>Community Poll</h2>
+            <p>Help us decide the next feature for Hypercoin!</p>
+            <form id="poll-form">
+                <label>
+                    <input type="radio" name="feature" value="staking"> Staking Rewards
+                </label>
+                <label>
+                    <input type="radio" name="feature" value="nft"> NFT Integration
+                </label>
+                <label>
+                    <input type="radio" name="feature" value="dao"> DAO Governance
+                </label>
+                <button type="submit">Vote</button>
+            </form>
+            <p id="poll-result"></p>
+        </div>
+    </section>
 
-document.querySelectorAll('.feature-card, .timeline-item').forEach(el => {
-    observer.observe(el);
-});
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hypercoin (HYC). All rights reserved.</p>
+            <p>
+                Follow us: 
+                <a href="https://twitter.com/hypercoinx" target="_blank">Twitter</a> | 
+                <a href="https://medium.com/@hypercoin2000" target="_blank">Medium</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
