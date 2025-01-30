@@ -3,82 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hypercoin (HYC) - Decentralized Future of Cryptocurrency">
-    <title>Hypercoin | HYC</title>
-    <link rel="stylesheet" href="styles/main.scss">
+    <title>Hypercoin (HYC) - A Community-Driven Crypto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <header>
         <div class="container">
-            <a href="#" class="logo">HYPERCOIN</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#features">Features</a>
-                <a href="#roadmap">Roadmap</a>
-                <a href="#poll">Vote</a>
-            </div>
+            <h1>Hypercoin (HYC)</h1>
+            <p>A Community-Driven Journey of Evolution</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#roadmap">Roadmap</a></li>
+                    <li><a href="#poll">Community Poll</a></li>
+                </ul>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="particle-background"></div>
+    <section id="about" class="section">
         <div class="container">
-            <h1 class="neon-text">Decentralized Future Starts Here</h1>
-            <p class="subtitle">HYC - Next-generation blockchain solution</p>
-            <button class="cta-button">Join Community</button>
-        </div>
-    </section>
-
-    <!-- Features Grid -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Core Features</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-shield-alt neon-accent"></i>
-                    <h3>Secure</h3>
-                    <p>Military-grade encryption and decentralized architecture</p>
-                </div>
-                <!-- More feature cards -->
-            </div>
+            <h2>About Hypercoin</h2>
+            <p>Hypercoin (HYC) is a community-driven cryptocurrency designed to evolve with the needs of its users. Our mission is to create a decentralized financial ecosystem that empowers individuals and fosters innovation.</p>
+            <p>Learn more about our journey and vision on <a href="https://medium.com/@hypercoin2000/introducing-hypercoin-hyc-a-community-driven-journey-of-evolution-a8b9b6ee2dca" target="_blank">Medium</a>.</p>
         </div>
     </section>
 
-    <!-- Interactive Roadmap -->
-    <section id="roadmap" class="roadmap">
+    <section id="features" class="section">
         <div class="container">
-            <h2>Development Roadmap</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-content">
-                        <h4>Q3 2024</h4>
-                        <p>Mainnet Launch</p>
-                        <div class="timeline-details">Details on hover...</div>
-                    </div>
-                </div>
-                <!-- More timeline items -->
-            </div>
+            <h2>Features</h2>
+            <ul>
+                <li>Decentralized and community-driven</li>
+                <li>Secure and transparent blockchain technology</li>
+                <li>Scalable and efficient transaction processing</li>
+                <li>Continuous evolution through community feedback</li>
+            </ul>
         </div>
     </section>
 
-    <!-- Community Poll -->
-    <section id="poll" class="poll">
+    <section id="roadmap" class="section">
         <div class="container">
-            <h2>Community Vote</h2>
-            <div class="poll-options">
-                <div class="poll-item">
-                    <h4>NFT Marketplace</h4>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 45%"></div>
-                    </div>
-                </div>
-                <!-- More poll options -->
-            </div>
+            <h2>Roadmap</h2>
+            <ul>
+                <li><strong>Q1 2025:</strong> Launch of Hypercoin Mainnet</li>
+                <li><strong>Q2 2025:</strong> Community Governance Platform Release</li>
+                <li><strong>Q3 2025:</strong> Integration with Major Exchanges</li>
+                <li><strong>Q4 2025:</strong> Hypercoin Ecosystem Expansion</li>
+            </ul>
         </div>
     </section>
 
-    <script src="scripts/main.js"></script>
+    <section id="poll" class="section">
+        <div class="container">
+            <h2>Community Poll</h2>
+            <p>Help us decide the next feature for Hypercoin!</p>
+            <form id="poll-form">
+                <label>
+                    <input type="radio" name="feature" value="staking"> Staking Rewards
+                </label>
+                <label>
+                    <input type="radio" name="feature" value="nft"> NFT Integration
+                </label>
+                <label>
+                    <input type="radio" name="feature" value="dao"> DAO Governance
+                </label>
+                <button type="submit">Vote</button>
+            </form>
+            <p id="poll-result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hypercoin (HYC). All rights reserved.</p>
+            <p>
+                Follow us: 
+                <a href="https://twitter.com/hypercoinx" target="_blank">Twitter</a> | 
+                <a href="https://medium.com/@hypercoin2000" target="_blank">Medium</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
